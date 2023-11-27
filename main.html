@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+   <style>
+    *{
+       padding: 0;
+       border: 0;
+       box-sizing: border-box;
+    }
+    body{
+        background: url(https://img.freepik.com/free-vector/elegant-cloud-background-blue-sky-design_1017-25503.jpg?w=996&t=st=1700810675~exp=1700811275~hmac=8f11f4a6adbe5f8615a456f03af22b51535daaa031232a93cca7608efbe14c8d);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .card{
+        margin:177px 312px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:60vh;
+        width:60vw;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
+    }
+    h1{
+        font-style: italic;
+        font-size: 45px;
+        margin-bottom: 156px;
+    }
+    .search-container{
+        margin-top: 73px;
+    }
+    .search{
+        height: 38px;
+        width:363px;
+        border-radius: 25px;
+    }
+    button{
+        width:163px;
+        height: 38px;
+        border-radius: 25px;
+        background-color:#a0c4cc;
+    }
+    button:hover{
+        background-color:rgb(23, 160, 151);
+        
+    }
+    @media only screen and (max-width: 1000px){
+       .card{
+        margin:406px 198px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:60vh;
+        width:60vw;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );   
+    }
+}
+   </style>
+</head>
+<body>
+    <div class="card">
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <input class="search" type="text"id="location" placeholder="">
+            <button id="search">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <p id="city"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+</div>
+    <script src="weather.js"></script>
+</body>
+</html>
